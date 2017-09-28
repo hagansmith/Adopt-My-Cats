@@ -1,2 +1,3 @@
 "use strict";
-console.log("Sup");
+require('./events');
+require('./cats');
