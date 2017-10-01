@@ -10,6 +10,7 @@ let catData = [];
 const catLoad = (catVal) => {
 $.ajax(`https://random-dogs-api.herokuapp.com/cats/${catVal}`).done((data) => {
   catData = data.cats;
+//dom function
   dom.domBuilder(catData);
 }).fail((error) => {
   console.log(error);

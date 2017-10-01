@@ -1,3 +1,33 @@
-body {
-  background-color: teal;
+/*body {
+  background-color: #f6f7e3;
+}*/
+
+.cat-card {
+  height: 400px;
 }
+
+.cat-card img {
+  padding-bottom: 3px;
+  border-bottom: 2px solid lightgrey;
+}
+
+@keyframes myanimation
+{
+    0% { left: 0; }
+    99% { left: 1700%; }
+    100% { visibility: hidden; }
+}
+
+#brand {
+height: 45px;
+position: relative;
+padding-bottom: 10px;
+animation: myanimation 20s;
+animation-timing-function: linear;
+
+}
+
+.navbar-default {
+  background-color: #cecece;
+  border-bottom: darkgrey 2px solid;
+ }

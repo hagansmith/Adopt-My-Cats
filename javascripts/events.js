@@ -1,6 +1,7 @@
 "use strict";
 
 let cats = require('./cats');
+let dom = require('./dom');
 
 //submit button
 $("#submit").click((event) => {
@@ -12,16 +13,19 @@ $("#submit").click((event) => {
   switchButtons();
 });
 
-//dom function
-
-
 const switchButtons = () => {
 //hide input
 $("#catzz").addClass("hidden");
 $("#submit").addClass("hidden");
-//new button
+//new remove button
 $("#disabledOnes").removeClass("hidden");
 };
 
+//remove button
+$("#disabledOnes").click(() => {
+  event.preventDefault();
+  let disabledCats = $(".disabled-cat");
+  $(".disabled-cat").parent().parent().addClass('hidden');
+});
 
 module.exports = {};
