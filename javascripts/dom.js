@@ -1,7 +1,6 @@
 "use strict";
 
 const domBuilder = (catData) => {
-  console.log(catData);
 let finalString = "";
 for (let i = 0; i < catData.length; i++) {
   let string = "";
