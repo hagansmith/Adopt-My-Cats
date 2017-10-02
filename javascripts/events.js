@@ -13,6 +13,16 @@ $("#submit").click((event) => {
   switchButtons();
 });
 
+$("#catzz").keypress((event) => {
+  if (event === 'enter') {
+    //get number of cats in "catzz"
+    let numberOfCats =  $('#catzz').val();
+    //put number into data api
+    cats.catLoad(numberOfCats);
+    switchButtons();
+  }
+});
+
 const switchButtons = () => {
 //hide input
 $("#catzz").addClass("hidden");
