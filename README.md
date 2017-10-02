@@ -1,5 +1,13 @@
 # Adopt My Cats
 
+## Syopsis:
+The Adopt My Cats project is an individual project working primarily with jQuery but incorporating previously learned tools to get remote data, write it to the DOM, and remove data based on a specified criteria.
+
+## What to expect:
+Enter a number of cats in an input field click submit or press enter and return the number of cats, their pictures and information. The original input field and submit button are removed and replaced with a button to remove cats with less than 10 toes.
+
+![DEMO](https://github.com/hagansmith/Adopt-My-Cats/blob/master/AdoptCats.gif)
+
 ### Instructions
 I'm the owner of a cat adoption website. I need a website that allows me to load in the number of cats I currently have available, display them on my screen, then be able to filter them based on whether or not they are considered disabled (have 10 toes or less).
 
@@ -29,9 +37,24 @@ I'm the owner of a cat adoption website. I need a website that allows me to load
 4. Once I click on the 'Get Rid Of The Disabled Ones' button, any card on my page that has a `p` tag with the class `disabled-kitty` should be hidden.
 
 
-### Tools You Should Be Using:
+### Tools Used:
 - Browserify
 - Grunt
 - jQuery (DOM methods, AJAX)
 - Linting
 - Bootstrap
+
+### How to run (Node must be installed on your machine):
+1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
+2. Navigate to the project folder in command line interface and type: `http-server -p 8080`  
+3. This will show at: `http://localhost:8080` in your internet browser.
+
+```
+git clone git@github.com:hagansmith/Adopt-My-Cats.git
+cd Adopt-My-Cats
+npm install http-server -g
+hs -c-1
+cd Adopt-My-Cats/lib
+npm install
+```
+Navigate to: http://localhost:8080
