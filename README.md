@@ -54,7 +54,7 @@ git clone git@github.com:hagansmith/Adopt-My-Cats.git
 cd Adopt-My-Cats
 npm install http-server -g
 hs -c-1
-cd Adopt-My-Cats/lib
+cd Ad/lib
 npm install
 ```
 Navigate to: http://localhost:8080
